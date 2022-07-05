@@ -2,9 +2,8 @@ package com.altees.account.security.repository;
 
 import com.altees.account.security.domain.User;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
-
-import java.util.Optional;
+import reactor.core.publisher.Mono;
 
 public interface UserRepository extends ReactiveCrudRepository<User,String> {
-    Optional<User> findByUserName(String userName);
+    Mono<User> findByUsername(String userName);
 }
