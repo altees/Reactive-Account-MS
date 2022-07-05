@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+# R2DBC Configuration
+spring:
+  r2dbc:
+  url: r2dbc:postgresql://localhost:5432/altees
+  username: root
+  password: root
